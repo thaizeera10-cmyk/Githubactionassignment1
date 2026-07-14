@@ -1,6 +1,9 @@
+"""Greeting utilities for creating customizable messages."""
+
+
 class Greeter:
     """A class responsible for generating customizable greetings."""
-
+    # pylint: disable=too-few-public-methods
     def __init__(self, template: str = "Hello, {name}!"):
         """
         Initialize the Greeter with a custom greeting template.
