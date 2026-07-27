@@ -66,3 +66,6 @@ This project uses GitHub Actions to automatically run linting and unit tests whe
 
 ```bash
 git checkout -b feature-name
+## CI Verification
+
+This change was created to verify that GitHub Actions runs on pull requests.
