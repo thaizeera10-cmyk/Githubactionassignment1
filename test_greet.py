@@ -15,5 +15,9 @@ class TestGreet(unittest.TestCase):
         """Test that an empty name returns the default greeting."""
         self.assertEqual(greet(""), "Hello, World!")
 
+    def test_full_name(self):
+        """Test greeting with a full name."""
+        self.assertEqual(greet("Alice Smith"), "Hello, Alice Smith!")
+
 if __name__ == "__main__":
     unittest.main()
