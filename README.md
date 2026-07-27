@@ -56,3 +56,13 @@ Run the unit test suite using Python's built-in `unittest` module:
 ```bash
 python -m unittest discover -s tests
 ```
+## Pull Requests and Continuous Integration
+
+This project uses GitHub Actions to automatically run linting and unit tests whenever code is pushed to the `main` branch or when a pull request targeting the `main` branch is created or updated.
+
+### Creating a Pull Request
+
+1. Create a new branch:
+
+```bash
+git checkout -b feature-name
