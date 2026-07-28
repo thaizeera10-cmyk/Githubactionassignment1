@@ -1,3 +1,6 @@
+![Python Tests](https://github.com/thaizeera10-cmyk/Githubactionassignment1/actions/workflows/test.yml/badge.svg)
+
+
 # Greeter
 
 A friendly, customizable greeting package and command-line tool.
