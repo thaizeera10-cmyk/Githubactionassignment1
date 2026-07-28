@@ -12,7 +12,7 @@ class Greeter:
         if "{name}" not in template:
             raise ValueError("Template must contain the '{name}' placeholder.")
         self.template = template
-
+# Return a formatted greeting message.
     def greet(self, name: str = "World") -> str:
         """Generate a greeting for the specified name."""
         if not name or not name.strip():
