@@ -72,3 +72,16 @@ git checkout -b feature-name
 ## CI Verification
 
 This change was created to verify that GitHub Actions runs on pull requests.
+## Running the Workflow Manually
+
+This repository supports manual execution of the GitHub Actions workflow.
+
+Steps:
+
+1. Open the repository on GitHub.
+2. Click the **Actions** tab.
+3. Select the **Python Tests** workflow.
+4. Click **Run workflow**.
+5. Select the `main` branch.
+6. Click the green **Run workflow** button.
+7. Wait for the workflow to complete and review the results.
