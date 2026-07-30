@@ -33,7 +33,8 @@ jobs:
         run: pylint greeter/greet.py test_greet.py
 
       - name: Run tests
-        run: python -m unittest discover
+        run: exit 1
+
 
       - name: Send email on failure
         if: failure()
