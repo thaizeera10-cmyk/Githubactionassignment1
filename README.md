@@ -85,3 +85,15 @@ Steps:
 5. Select the `main` branch.
 6. Click the green **Run workflow** button.
 7. Wait for the workflow to complete and review the results.
+## Email Notification Setup
+
+This project uses GitHub Actions to send an email notification when the linting or testing workflow fails.
+
+### GitHub Actions Email Notification
+
+The workflow uses the `dawidd6/action-send-mail` GitHub Action to send failure notifications.
+
+The email notification step runs only when a previous workflow step fails:
+
+```yaml
+if: failure()
