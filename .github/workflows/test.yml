@@ -33,7 +33,15 @@ jobs:
         run: pylint greeter/greet.py test_greet.py
 
       - name: Run tests
-        run: python -m unittest discover
+        run: |  
+          mkdir -p test-results
+          python -m unittest discover -v | tee test-results/test-output.txt
+      
+      - name: Upload test output
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-output
+          path: test-results/test-output.txt
 
 
       - name: Send email on failure
